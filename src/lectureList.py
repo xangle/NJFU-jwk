@@ -30,7 +30,7 @@ lectureList = []
 for line in data:
     line = line.split(",")
 
-    lecture["name"] = line[0]
+    lecture["name"] = line[0][9:]
     lecture["score"] = line[1]
     lecture["type"] = line[2]
     lecture["teacher"] = line[3]
