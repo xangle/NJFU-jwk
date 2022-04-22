@@ -14,7 +14,7 @@ def convert(classtime):
             "weekEnd": "",
             "week": "",
             "periodBegin": 0,
-            "peroidEnd": 0,
+            "periodEnd": 0,
             "classroom": ""
         }
 
@@ -28,7 +28,7 @@ def convert(classtime):
         if "单" not in classtime[i] and "双" not in classtime[i]:
             detail["isSingWeek"], detail["isEvenWeek"] = True, True
 
-        # match weekBegin and Weekend
+        # matching week period and class period
         weekperiod = re.findall("[0-9]{1,2}-[0-9]{1,2}.周", classtime[i])
         if weekperiod != []:
             weekBegin = re.findall("[0-9]{1,2}-", weekperiod[0])[0][:-1]
@@ -54,6 +54,7 @@ def convert(classtime):
                 detail["periodBegin"] = classBegin
                 detail["periodEnd"] = classEnd
                 detail["classroom"] = classroom
+                detail["week"] = week
                 detailList.append(deepcopy(detail))
         else:
             detail["weekBegin"] = weekBegin
@@ -64,12 +65,11 @@ def convert(classtime):
             detail["week"] = week
             detailList.append(deepcopy(detail))
 
-        return detailList
+    return detailList
 
 
 with open("lectureList.json", "r") as f:
     lectureDetailList = json.loads(f.read())
-
 
 for i, item in enumerate(lectureDetailList):
     lectureDetailList[i]["classTimeList"] = convert(lectureDetailList[i]["classTimeList"])
@@ -80,8 +80,4 @@ with open("lectureDetailList.json", "w") as f:
 
 # Debug print
 for lecture in lectureDetailList:
-    for k, v in lecture.items():
-        if k == "classTimeList":
-            for item in v:
-                for i, j in item.items():
-                    print(i, "\t\t\t", j)
+    print(lecture, "\n")

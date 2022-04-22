@@ -1,6 +1,3 @@
-#!/usr/bin/env python3.9
-# -*- coding: UTF-8 -*-
-
 from copy import deepcopy
 import json
 
@@ -54,8 +51,9 @@ for line in data:
 
     lectureList.append(deepcopy(lecture))
 
-for lecture in lectureList:
-    print(lecture["classTimeList"])
-
 with open("lectureList.json", 'w', encoding="utf-8") as f:
     f.write(json.dumps(lectureList, ensure_ascii=False)+"\n")
+
+# Debug print
+for lecture in lectureList:
+    print(lecture["classTimeList"])
