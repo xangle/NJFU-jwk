@@ -5,7 +5,7 @@ import hashlib
 jwkUrl = 'http://jwk.njfu.edu.cn/'
 jwkLoginUrl = 'http://jwk.njfu.edu.cn/_data/login_home.aspx'
 userid = ''
-pwd = '3021STOP'
+pwd = ''
 
 loginSession = requests.session()
 
