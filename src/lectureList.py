@@ -52,8 +52,9 @@ for line in data:
     lectureList.append(deepcopy(lecture))
 
 with open("lectureList.json", 'w', encoding="utf-8") as f:
-    f.write(json.dumps(lectureList, ensure_ascii=False)+"\n")
+    f.write("{\"list\":")
+    f.write(json.dumps(lectureList, indent=4, sort_keys=True,  ensure_ascii=False)+"\n")
+    f.write("}")
 
 # Debug print
-for lecture in lectureList:
-    print(lecture["classTimeList"])
+print(lectureList)

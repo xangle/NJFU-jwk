@@ -10,11 +10,11 @@ def convert(classtime):
         detail = {
             "isSingWeek": False,
             "isEvenWeek": False,
-            "weekBegin": "",
-            "weekEnd": "",
+            "weekBegin": 0,
+            "weekEnd": 0,
             "week": "",
-            "periodBegin": 0,
-            "periodEnd": 0,
+            "periodBegin": "0",
+            "periodEnd": "0",
             "classroom": ""
         }
 
@@ -31,14 +31,17 @@ def convert(classtime):
         # matching week period and class period
         weekperiod = re.findall("[0-9]{1,2}-[0-9]{1,2}.周", classtime[i])
         if weekperiod != []:
-            weekBegin = re.findall("[0-9]{1,2}-", weekperiod[0])[0][:-1]
-            weekEnd = re.findall("-[0-9]{1,2}", weekperiod[0])[0][1:]
+            weekBegin = int(re.findall("[0-9]{1,2}-", weekperiod[0])[0][:-1])
+            weekEnd = int(re.findall("-[0-9]{1,2}", weekperiod[0])[0][1:])
         classperiod = re.findall("[0-9]{1,2}-[0-9]{1,2}节", classtime[i])
         if classperiod != []:
             classBegin = re.findall("[0-9]{1,2}-", classperiod[0])[0][:-1]
             classEnd = re.findall("-[0-9]{1,2}", classperiod[0])[0][1:]
         week = re.findall("星期.", classtime[i])
-        classroom = re.findall("[^/]+(?!.*/)", classtime[i])
+        try:
+            classroom = re.findall("[^/]+(?!.*/)", classtime[i])[0]
+        except:
+            classroom = ""
         if weekperiod == []:
             singw = re.findall("[0-9]{1,2}周", classtime[i])
             if singw == []:
@@ -46,7 +49,7 @@ def convert(classtime):
                 detailList.append(deepcopy(detail))
                 continue
             else:
-                singw = singw[0][:-1]
+                singw = int(singw[0][:-1])
                 classBegin = re.findall("[0-9]{1,2}-", classperiod[0])[0][:-1]
                 classEnd = re.findall("-[0-9]{1,2}", classperiod[0])[0][1:]
                 detail["weekBegin"] = singw
@@ -54,7 +57,7 @@ def convert(classtime):
                 detail["periodBegin"] = classBegin
                 detail["periodEnd"] = classEnd
                 detail["classroom"] = classroom
-                detail["week"] = week
+                detail["week"] = week[0]
                 detailList.append(deepcopy(detail))
         else:
             detail["weekBegin"] = weekBegin
@@ -62,22 +65,26 @@ def convert(classtime):
             detail["periodBegin"] = classBegin
             detail["periodEnd"] = classEnd
             detail["classroom"] = classroom
-            detail["week"] = week
+            detail["week"] = week[0]
             detailList.append(deepcopy(detail))
 
     return detailList
 
 
 with open("lectureList.json", "r") as f:
-    lectureDetailList = json.loads(f.read())
+    content = f.read()[8:-1]
+    print(content)
+    lectureDetailList = json.loads(content)
 
 for i, item in enumerate(lectureDetailList):
     lectureDetailList[i]["classTimeList"] = convert(lectureDetailList[i]["classTimeList"])
 
-with open("lectureDetailList.json", "w") as f:
-    f.write(json.dumps(lectureDetailList, ensure_ascii=False)+"\n")
+with open("lectureDetailList.json", "w", encoding="utf-8") as f:
+    f.write("{\"list\":")
+    f.write(json.dumps(lectureDetailList, indent=4, sort_keys=True, ensure_ascii=False)+"\n")
+    f.write("}")
 
 
 # Debug print
 for lecture in lectureDetailList:
-    print(lecture, "\n")
+    print(lecture["classTimeList"], "\n")

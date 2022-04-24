@@ -1,1 +1,188 @@
-[{"name": "工程经济管理概论[社会认知类]", "score": "1.0", "type": "社会认知类公共课/任选课", "teacher": "汪海燕", "classNum": "001", "className": "", "selectLimit": "700", "selected": "681", "selectble": "19", "classTimeList": ["[1-11周]星期日[7-8节]/"]}, {"name": "工程力学A(2)", "score": "3.0", "type": "A类课程 专业基础课/必修课", "teacher": "吴晓莉", "classNum": "001", "className": "", "selectLimit": "55", "selected": "51", "selectble": "4", "classTimeList": ["[1-17周]星期五[5-7节]/50504"]}, {"name": "流体力学与液压气压传动", "score": "2.0", "type": "理论课 专业基础课/必修课", "teacher": "汪希伟", "classNum": "001", "className": "", "selectLimit": "48", "selected": "47", "selectble": "1", "classTimeList": ["[1-17周]星期一[3-4节]/50511"]}, {"name": "智能制造工艺B", "score": "2.0", "type": "理论课 专业基础课/选修课", "teacher": "徐兆军", "classNum": "001", "className": "", "selectLimit": "45", "selected": "24", "selectble": "21", "classTimeList": ["[1-11周]星期一[5-7节]/0322"]}, {"name": "电工及电子技术A(1)", "score": "3.0", "type": "A类课程 专业基础课/必修课", "teacher": "汪向华", "classNum": "003", "className": "", "selectLimit": "48", "selected": "49", "selectble": "-1", "classTimeList": ["[1-12周]星期二[1-2节]/50304", "[1-12周]星期四[3-4节]/50304"]}, {"name": "电工电子实验A(1)", "score": "0.5", "type": "专业基础课/必修课", "teacher": "张建平", "classNum": "004", "className": "", "selectLimit": "47", "selected": "50", "selectble": "-3", "classTimeList": ["[5-12周]星期五[3-4节]/实验室"]}, {"name": "概率统计B", "score": "3.0", "type": "A类课程 专业基础课/必修课_", "teacher": "吴清太", "classNum": "011", "className": "", "selectLimit": "198", "selected": "144", "selectble": "54", "classTimeList": ["[15周]星期一[9-11节]/9A105", " [1-15周]星期三[9-11节]/0123"]}, {"name": "复变函数与积分变换", "score": "2.0", "type": "理论课 专业基础课/必修课", "teacher": "宋逸夫", "classNum": "004", "className": "", "selectLimit": "114", "selected": "103", "selectble": "11", "classTimeList": ["[1-11单周]星期四[1-2节]/0223", " [1-11周]星期六[5-6节]/0223"]}, {"name": "大学英语(4)", "score": "2.0", "type": "A类课程 通识教育课/必修课_", "teacher": "陈丽屏", "classNum": "015", "className": "", "selectLimit": "48", "selected": "47", "selectble": "1", "classTimeList": ["[1-16周]星期五[1-2节]/50303"]}, {"name": "体育(4)", "score": "1.0", "type": "通识教育课/必修课", "teacher": "宋晓尧", "classNum": "069", "className": "羽毛球_", "selectLimit": "0", "selected": "23", "selectble": "0", "classTimeList": ["该课程暂无上课时间"]}, {"name": "马克思主义基本原理", "score": "2.0", "type": "理论课 通识教育课/必修课", "teacher": "韩立云", "classNum": "020", "className": "", "selectLimit": "198", "selected": "140", "selectble": "58", "classTimeList": ["[1-12周]星期四[9-11节]/9A105"]}, {"name": "红楼梦欣赏[人文素养类]", "score": "2.0", "type": "人文素养类 公共课/任选课", "teacher": "于师号", "classNum": "001", "className": "", "selectLimit": "198", "selected": "198", "selectble": "0_", "classTimeList": ["[1-12周]星期日[9-11节]/9A207"]}, {"name": "人工智能原理及应用", "score": "2.0", "type": "理论课 专业基础课/选修课", "teacher": "程玉柱", "classNum": "001", "className": "", "selectLimit": "95", "selected": "101", "selectble": "-6", "classTimeList": ["[1-12周]星期四[5-7节]/50313"]}]
+{"list":[
+    {
+        "className": "",
+        "classNum": "001",
+        "classTimeList": [
+            "[1-11周]星期日[7-8节]/"
+        ],
+        "name": "工程经济管理概论[社会认知类]",
+        "score": "1.0",
+        "selectLimit": "700",
+        "selectble": "19",
+        "selected": "681",
+        "teacher": "汪海燕",
+        "type": "社会认知类公共课/任选课"
+    },
+    {
+        "className": "",
+        "classNum": "001",
+        "classTimeList": [
+            "[1-17周]星期五[5-7节]/50504"
+        ],
+        "name": "工程力学A(2)",
+        "score": "3.0",
+        "selectLimit": "55",
+        "selectble": "4",
+        "selected": "51",
+        "teacher": "吴晓莉",
+        "type": "A类课程 专业基础课/必修课"
+    },
+    {
+        "className": "",
+        "classNum": "001",
+        "classTimeList": [
+            "[1-17周]星期一[3-4节]/50511"
+        ],
+        "name": "流体力学与液压气压传动",
+        "score": "2.0",
+        "selectLimit": "48",
+        "selectble": "1",
+        "selected": "47",
+        "teacher": "汪希伟",
+        "type": "理论课 专业基础课/必修课"
+    },
+    {
+        "className": "",
+        "classNum": "001",
+        "classTimeList": [
+            "[1-11周]星期一[5-7节]/0322"
+        ],
+        "name": "智能制造工艺B",
+        "score": "2.0",
+        "selectLimit": "45",
+        "selectble": "21",
+        "selected": "24",
+        "teacher": "徐兆军",
+        "type": "理论课 专业基础课/选修课"
+    },
+    {
+        "className": "",
+        "classNum": "003",
+        "classTimeList": [
+            "[1-12周]星期二[1-2节]/50304",
+            "[1-12周]星期四[3-4节]/50304"
+        ],
+        "name": "电工及电子技术A(1)",
+        "score": "3.0",
+        "selectLimit": "48",
+        "selectble": "-1",
+        "selected": "49",
+        "teacher": "汪向华",
+        "type": "A类课程 专业基础课/必修课"
+    },
+    {
+        "className": "",
+        "classNum": "004",
+        "classTimeList": [
+            "[5-12周]星期五[3-4节]/实验室"
+        ],
+        "name": "电工电子实验A(1)",
+        "score": "0.5",
+        "selectLimit": "47",
+        "selectble": "-3",
+        "selected": "50",
+        "teacher": "张建平",
+        "type": "专业基础课/必修课"
+    },
+    {
+        "className": "",
+        "classNum": "011",
+        "classTimeList": [
+            "[15周]星期一[9-11节]/9A105",
+            " [1-15周]星期二[9-11节]/0123"
+        ],
+        "name": "概率统计B",
+        "score": "3.0",
+        "selectLimit": "198",
+        "selectble": "54",
+        "selected": "144",
+        "teacher": "吴清太",
+        "type": "A类课程 专业基础课/必修课_"
+    },
+    {
+        "className": "",
+        "classNum": "004",
+        "classTimeList": [
+            "[1-11单周]星期四[1-2节]/0223",
+            " [1-11周]星期六[5-6节]/0223"
+        ],
+        "name": "复变函数与积分变换",
+        "score": "2.0",
+        "selectLimit": "114",
+        "selectble": "11",
+        "selected": "103",
+        "teacher": "宋逸夫",
+        "type": "理论课 专业基础课/必修课"
+    },
+    {
+        "className": "",
+        "classNum": "015",
+        "classTimeList": [
+            "[1-16周]星期五[1-2节]/50303"
+        ],
+        "name": "大学英语(4)",
+        "score": "2.0",
+        "selectLimit": "48",
+        "selectble": "1",
+        "selected": "47",
+        "teacher": "陈丽屏",
+        "type": "A类课程 通识教育课/必修课_"
+    },
+    {
+        "className": "羽毛球_",
+        "classNum": "069",
+        "classTimeList": [
+            "该课程暂无上课时间"
+        ],
+        "name": "体育(4)",
+        "score": "1.0",
+        "selectLimit": "0",
+        "selectble": "0",
+        "selected": "23",
+        "teacher": "宋晓尧",
+        "type": "通识教育课/必修课"
+    },
+    {
+        "className": "",
+        "classNum": "020",
+        "classTimeList": [
+            "[1-12周]星期四[9-11节]/9A105"
+        ],
+        "name": "马克思主义基本原理",
+        "score": "2.0",
+        "selectLimit": "198",
+        "selectble": "58",
+        "selected": "140",
+        "teacher": "韩立云",
+        "type": "理论课 通识教育课/必修课"
+    },
+    {
+        "className": "",
+        "classNum": "001",
+        "classTimeList": [
+            "[1-12周]星期日[9-11节]/9A207"
+        ],
+        "name": "红楼梦欣赏[人文素养类]",
+        "score": "2.0",
+        "selectLimit": "198",
+        "selectble": "0_",
+        "selected": "198",
+        "teacher": "于师号",
+        "type": "人文素养类 公共课/任选课"
+    },
+    {
+        "className": "",
+        "classNum": "001",
+        "classTimeList": [
+            "[1-12周]星期四[5-7节]/50313"
+        ],
+        "name": "人工智能原理及应用",
+        "score": "2.0",
+        "selectLimit": "95",
+        "selectble": "-6",
+        "selected": "101",
+        "teacher": "程玉柱",
+        "type": "理论课 专业基础课/选修课"
+    }
+]
+}
